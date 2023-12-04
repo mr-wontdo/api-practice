@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+:root {
+    --illuminated-navy: #4f505c;
+    --brilliant-yellow: #ffd497;
+}
+
+body {
+    background-color: var(--illuminated-navy);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    height: 96px;
+}
+
+/* Content */
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-interface {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    height: 64px;
+}
+
+button {
+    background-color: var(--brilliant-yellow);
+}
+
