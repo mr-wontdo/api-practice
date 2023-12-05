@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid black;
 }
 
 :root {
@@ -13,6 +12,7 @@
 body {
     background-color: var(--illuminated-navy);
     color: white;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -20,27 +20,77 @@ body {
 
 /* Header */
 header {
-    height: 96px;
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 124px;
 }
 
 /* Content */
 .content {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .user-interface {
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-/* Footer */
-footer {
-    height: 64px;
+    gap: 12px;
+    padding: 32px;
 }
 
 button {
     background-color: var(--brilliant-yellow);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
 }
 
+button:hover {
+    background-color: #dfb881;
+}
+
+form {
+    display: flex;
+}
+
+input#giphy_search {
+    border: none;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1.1rem;
+    padding: 0 12px;
+    height: 32px;
+    width: 500px;
+}
+
+input#giphy_search:focus {
+    outline: 1px solid black;
+}
+
+.giphy-container {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+img {
+    border-radius: 12px;
+    height: auto;
+    width: 800px;
+}
+
+/* Footer */
+footer {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    gap: 6px;
+}
